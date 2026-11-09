@@ -38,11 +38,16 @@ Dashboard administrativo interactivo desarrollado en **Nuxt 3 (Vue 3)** y compon
 ## ⚙️ Instalación y Uso
 
 ### 1. Requisitos Previos
-- Node.js >= 20.x
+- Node.js >= 20.x (`.nvmrc` incluido: `20.18.2`)
 - pnpm instalado (`npm install -g pnpm`)
 - API Serverless de B-Life en ejecución (por defecto en `http://localhost:3000/api`)
 
-### 2. Configurar Variables de Entorno
+### 2. Configurar Versión de Node.js
+```bash
+nvm use
+```
+
+### 3. Configurar Variables de Entorno
 ```bash
 cp .env.example .env
 ```
@@ -51,18 +56,18 @@ Ajusta la URL de la API si es necesario en `.env`:
 API_BASE_URL=http://localhost:3000/api
 ```
 
-### 3. Instalar Dependencias
+### 4. Instalar Dependencias
 ```bash
 pnpm install
 ```
 
-### 4. Modo Desarrollo
+### 5. Modo Desarrollo
 ```bash
 pnpm dev
 ```
 La aplicación estará disponible en [http://localhost:3001](http://localhost:3001).
 
-### 5. Compilación para Producción
+### 6. Compilación para Producción
 ```bash
 pnpm build
 ```
