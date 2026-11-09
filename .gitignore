@@ -1,0 +1,14 @@
+# Nuxt & Node build outputs
+.nuxt
+.output
+dist
+node_modules
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs & temp
+*.log
+.DS_Store
