@@ -2,20 +2,26 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   telemetry: false,
-  ssr: false, // SPA Mode para dashboard interactivo conectado a la API Serverless
+
+  // SPA Mode para dashboard interactivo conectado a la API Serverless
+  ssr: false,
+
   css: [
     '@quasar/extras/roboto-font/roboto-font.css',
     '@quasar/extras/material-icons/material-icons.css',
     'quasar/dist/quasar.css',
   ],
+
   build: {
     transpile: ['quasar'],
   },
+
   runtimeConfig: {
     public: {
       apiBase: process.env.API_BASE_URL || 'http://localhost:3000/api',
     },
   },
+
   app: {
     head: {
       title: 'B-Life Store - Gestión de Catálogo, Ventas e Indicadores',
@@ -28,5 +34,7 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
       ]
     }
-  }
+  },
+
+  compatibilityDate: '2026-11-09'
 })
